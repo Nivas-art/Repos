@@ -25,7 +25,7 @@ VALIDATE(){
 }
 
 dnf install mysql -y &>>$FILELOG
-$VALIDATE $? "installing of mysql"
+VALIDATE $? "installing of mysql"
 
 dnf install git -y &>>$FILELOG
-$VALIDATE $? "installing of git"
+VALIDATE $? "installing of git"
