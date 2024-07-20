@@ -1,15 +1,11 @@
 #!bin/bash
 
-VALIDATE(){
-    if [ $1 -ne 0 ]
-    then
-        echo "$2.....FAILURE"
-        exit 1
-    elase
-        echo "$2.....SUCCES"
-    fi
-}
 USERID=$(id -u)
+
+TIMESTAMP=$(date)
+SCRIPT_NAME=$($0)
+FILELOG=$(/TMP/$TIMESTAMP-SCRIPT_NAME.log)
+
 
 if [ $USERID -ne 0 ]
 then 
@@ -19,8 +15,18 @@ else
     echo "your in root user"
 fi
 
-dnf install mysql -y
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then
+        echo "$2.....FAILURE"
+        exit 1
+    elase
+        echo "$2.....SUCCES"
+    fi
+}
+
+dnf install mysql -y &>>$FILELOG
 $VALIDATE $? "installing of mysql"
 
-dnf install git -y
+dnf install git -y &>>$FILELOG
 $VALIDATE $? "installing of git"
