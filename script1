@@ -15,8 +15,13 @@
 
 #CONFIDENTIAL INFO
 
-echo "please enter username"
-read  $username
-echo "please enter pwd"
-read  $pwd
-echo "username is: $username, pwd is : $pwd"
+#echo "please enter username"
+#read  $username
+#echo "please enter pwd"
+#read  $pwd
+#echo "username is: $username, pwd is : $pwd"
+
+movies=('rrr' 'kkk')
+
+echo "firat movie is : $(movies{0})"
+echo "secound movoes is : $(movies{1})"
