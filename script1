@@ -16,7 +16,7 @@
 #CONFIDENTIAL INFO
 
 echo "please enter username"
-read -s $username
+read  $username
 echo "please enter pwd"
-read -s $pwd
-echo "u r $username : $pwd"
+read  $pwd
+echo "username is: $username, pwd is : $pwd"
