@@ -1,27 +1,2 @@
 #!bin/bash
-#variables
-
-#PERSON1=srinu
-#PERSON2=raju
-
-#echo "hello $PERSON1"
-#echo "hello $PERSON2"
-
-#PERSON=$1
-#PERSON=$2
-
-#echo "hello $1"
-#echo "hello $2"
-
-#CONFIDENTIAL INFO
-
-#echo "please enter username"
-#read  $username
-#echo "please enter pwd"
-#read  $pwd
-#echo "username is: $username, pwd is : $pwd"
-
-movies=('rrr' 'kkk')
-
-echo "firat movie is : $(movies{0})"
-echo "secound movoes is : $(movies{1})"
+hiii
