@@ -3,8 +3,8 @@
 USERID=$(id -u)
 
 TIMESTAMP=$(date)
-SCRIPT_NAME=$($0)
-FILELOG=$(/tmp/$TIMESTAMP-SCRIPT_NAME.log)
+SCRIPT_NAME=$(echo $0)
+FILELOG=/tmp/$TIMESTAMP-SCRIPT_NAME.log
 
 if [ $USERID -ne 0 ]
 then 
