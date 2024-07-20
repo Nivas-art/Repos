@@ -7,8 +7,16 @@
 #echo "hello $PERSON1"
 #echo "hello $PERSON2"
 
-PERSON=$1
-PERSON=$2
+#PERSON=$1
+#PERSON=$2
 
-echo "hello $1"
-echo "hello $2"
+#echo "hello $1"
+#echo "hello $2"
+
+#CONFIDENTIAL INFO
+
+echo "please enter username"
+read -s $username
+echo "please enter pwd"
+read -s $pwd
+echo "u r $username : $pwd"
