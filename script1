@@ -9,3 +9,18 @@ exit 1
 else
     echo "your in root user"
 fi
+
+VALIDATE(){
+    if [ $1 -ne 0 ]
+    then
+        echo "$2.....FAILURE"
+    elase
+        echo "$2.....SUCCES"
+    fi
+}
+
+dnf install mysql -y
+$VALIDATE $? "installing of mysql"
+
+dnf install git -y
+$VALIDATE $? "installing of git"
