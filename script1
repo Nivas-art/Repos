@@ -4,8 +4,7 @@ USERID=$(id -u)
 
 TIMESTAMP=$(date)
 SCRIPT_NAME=$($0)
-FILELOG=$(/TMP/$TIMESTAMP-SCRIPT_NAME.log)
-
+FILELOG=$(/tmp/$TIMESTAMP-SCRIPT_NAME.log)
 
 if [ $USERID -ne 0 ]
 then 
