@@ -15,7 +15,7 @@ then
     echo "your not in root user"
     exit 1
 else
-    echo "your in root user"
+    echo "your in root userr"
 fi
 
 VALIDATE(){
