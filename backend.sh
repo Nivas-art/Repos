@@ -24,3 +24,15 @@ VALIDATE(){
         echo -e "$2....$G PASS $N"
     fi
 }
+
+dnf module disable nodejs -y
+VALIDATE $? "disable is"
+
+dnf module enable nodejs:20 -y
+VALIDATE $? "enable 20 version is"
+
+dnf install nodejs -y
+VALIDATE $? "insatll of nodejs"
+
+useradd expense
+VALIDATE $? "user added"
