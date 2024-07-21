@@ -7,6 +7,8 @@ LOGFILE=/tmp/$TIMESTAMP-$SCRIPT_NAME.log
 R="\e[31m"
 G="\e[32m"
 N="\e[0m"
+echo "please enter a pwd"
+read sql_root_pwd
 
 if [ $USERID -ne 0 ]
 then
