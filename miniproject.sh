@@ -39,7 +39,7 @@ VALIDATE $? "start of mysql is"
 #mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
 #VALIDATE $? "pwd of mysql is"
 
-mysql -h 18.212.67.192 -uroot -p${sql_root_pwd} -e 'show databases;' &>>$LOGFILE
+mysql -h 18.212.67.192 -uroot -pExpenseApp@1 -e 'show databases;' &>>$LOGFILE
 if [ $? -ne 0 ]
 then 
     mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGFILE
